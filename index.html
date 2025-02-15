@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de ciclas</title>
+  <!-- Vincular hoja de estilos personalizada y Bootstrap -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+</header>
+
+  <!-- Header con carrusel y navegación -->
+  <header>
+    <!-- Carrusel Bootstrap -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="1.carrusel.jpg" class="d-block w-100" alt="Imagen 1">
+        </div>
+        <div class="carousel-item">
+          <img src="2.carrusel.jpg" class="d-block w-100" alt="Imagen 2">
+        </div>
+        <div class="carousel-item">
+          <img src="3.carrusel.jpg" class="d-block w-100" alt="Imagen 3">
+        </div>
+        <div class="carousel-item">
+          <img src="4.carrusel.jpg" class="d-block w-100" alt="Imagen 4">
+        </div>
+        <div class="carousel-item">
+          <img src="5.carrusel.jpg" class="d-block w-100" alt="Imagen 5">
+        </div>
+        <div class="carousel-item">
+          <img src="6.carrusel.jpg" class="d-block w-100" alt="Imagen 6">
+        </div>
+        <div class="carousel-item">
+          <img src="7.carrusel.jpg" class="d-block w-100" alt="Imagen 7">
+        </div>
+        <div class="carousel-item">
+          <img src="8.carrusel.jpg" class="d-block w-100" alt="Imagen 8">
+        </div>
+        <div class="carousel-item">
+          <img src="9.carrusel.jpg" class="d-block w-100" alt="Imagen 9">
+        </div>
+        <div class="carousel-item">
+          <img src="10.carrusel.jpg" class="d-block w-100" alt="Imagen 10">
+        </div>
+        <div class="carousel-item">
+          <img src="11.carrusel.jpg" class="d-block w-100" alt="Imagen 11">
+        </div>
+        <div class="carousel-item">
+          <img src="12.carrusel.jpg" class="d-block w-100" alt="Imagen 12">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+
+    <!-- Navegación -->
+    <nav>
+      <a href="#servicios">Servicios</a>
+      <a href="calculadora.html">Calculadora</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Sección de productos -->
+  <main class="container mt-5">
+    <!-- Sección 1 -->
+    <section class="servicios">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="tarjeta" onclick="abrirModal('1.producto.jpg', 'cicla Tradicional')">
+            <img src="1.producto.jpg" alt="cicla Tradicional">
+            <h3>cicla Tradicional</h3>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="tarjeta" onclick="abrirModal('2.producto.jpg', 'cicla Moderna')">
+            <img src="2.producto.jpg" alt="cicla Moderna">
+            <h3>cicla Moderna</h3>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="tarjeta" onclick="abrirModal('3.producto.jpg', 'cicla Premium')">
+            <img src="3.producto.jpg" alt="cicla Premium">
+            <h3>cicla Premium</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br>
+
+    <!-- Sección 2 -->
+    <section class="servicios">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="tarjeta" onclick="abrirModal('4.producto.jpg', 'cicla Tradicional')">
+            <img src="4.producto.jpg" alt="cicla Tradicional">
+            <h3>cicla Tradicional</h3>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="tarjeta" onclick="abrirModal('5.producto.jpg', 'cicla Moderna')">
+            <img src="5.producto.jpg" alt="cicla Moderna">
+            <h3>cicla Moderna</h3>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="tarjeta" onclick="abrirModal('6.producto.jpg', 'cicla Premium')">
+            <img src="6.producto.jpg" alt="cicla Premium">
+            <h3>cicla Premium</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br>
+
+    <!-- Sección 3 -->
+    <section class="servicios">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="tarjeta" onclick="abrirModal('7.producto.jpg', 'cicla Tradicional')">
+            <img src="7.producto.jpg" alt="cicla Tradicional">
+            <h3>cicla Tradicional</h3>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="tarjeta" onclick="abrirModal('8.producto.jpg', 'cicla Moderna')">
+            <img src="8.producto.jpg" alt="cicla Moderna">
+            <h3>cicla Moderna</h3>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="tarjeta" onclick="abrirModal('9.producto.jpg', 'cicla Premium')">
+            <img src="9.producto.jpg" alt="cicla Premium">
+            <h3>cicla Premium</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br>
+
+    <!-- Sección 4 -->
+    <section class="servicios">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="tarjeta" onclick="abrirModal('10.producto.jpg', 'cicla Tradicional')">
+            <img src="10.producto.jpg" alt="cicla Tradicional">
+            <h3>cicla Tradicional</h3>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="tarjeta" onclick="abrirModal('11.producto.jpg', 'cicla Moderna')">
+            <img src="11.producto.jpg" alt="cicla Moderna">
+            <h3>cicla Moderna</h3>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="tarjeta" onclick="abrirModal('12.producto.jpg', 'cicla Premium')">
+            <img src="12.producto.jpg" alt="cicla Premium">
+            <h3>cicla Premium</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br>
+
+    <!-- Sección 5 -->
+    <section class="servicios">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="tarjeta" onclick="abrirModal('13.producto.jpg', 'cicla Tradicional')">
+            <img src="13.producto.jpg" alt="cicla Tradicional">
+            <h3>cicla Tradicional</h3>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="tarjeta" onclick="abrirModal('14.producto.jpg', 'cicla Moderna')">
+            <img src="14.producto.jpg" alt="cicla Moderna">
+            <h3>cicla Moderna</h3>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="tarjeta" onclick="abrirModal('15.producto.jpg', 'cicla Premium')">
+            <img src="15.producto.jpg" alt="cicla Premium">
+            <h3>cicla Premium</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br>
+
+    <!-- Sección 6 -->
+    <section class="servicios">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="tarjeta" onclick="abrirModal('16.producto.jpg', 'cicla Tradicional')">
+            <img src="16.producto.jpg" alt="cicla Tradicional">
+            <h3>cicla Tradicional</h3>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="tarjeta" onclick="abrirModal('17.producto.jpg', 'cicla Moderna')">
+            <img src="17.producto.jpg" alt="cicla Moderna">
+            <h3>cicla Moderna</h3>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="tarjeta" onclick="abrirModal('19.producto.jpg', 'cicla Premium')">
+            <img src="19.producto.jpg" alt="cicla Premium">
+            <h3>cicla Premium</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" onclick="cerrarModal()">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <span class="close" onclick="cerrarModal()">&times;</span>
+      <img id="modal-img" src="" alt="Imagen Modal">
+      <h3 id="modal-title"></h3>
+    </div>
+  </div>
+
+  <!-- Botón de WhatsApp -->
+  <a href="https://wa.me/3245529189" target="_blank" class="whatsapp-button">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    <span>¡Contáctanos por WhatsApp!</span>
+  </a>
+
+  <!-- Scripts de Bootstrap y personalizados -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

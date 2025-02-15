@@ -1,0 +1,192 @@
+/* ============================= */
+/* Estilos Generales y Reset     */
+/* ============================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background: url('fondo.webp') no-repeat center center fixed;
+  background-size: cover;
+  line-height: 1.6;
+}
+
+/* Header y Navegación */
+header {
+  background-color: #333;
+  color: #fff;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  padding: 5px 10px;
+}
+
+header nav a:hover {
+  background-color: #575757;
+}
+
+/* Carousel */
+.carousel-inner img {
+  height: 45vh;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* ============================= */
+/* Tarjetas de Servicios         */
+/* ============================= */
+.tarjeta {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 280px; /* Tamaño fijo */
+  margin: auto;
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.tarjeta h3 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.tarjeta:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Grid para tarjetas en secciones */
+.servicios .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* ============================= */
+/* Modal                         */
+/* ============================= */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 50%;
+  max-width: 600px;
+}
+
+.modal-content img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  color: red;
+  cursor: pointer;
+}
+
+/* ============================= */
+/* Botón de WhatsApp             */
+/* ============================= */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.whatsapp-button img {
+  width: 20px;
+  height: 20px;
+}
+
+
+/* Define una altura para el contenedor del carrusel */
+.carousel-inner {
+  height: 75vh; /* Puedes ajustar este valor según tus necesidades */
+}
+
+/* Ajusta las imágenes para que se vean completas */
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Muestra la imagen completa sin recortarla */
+  background-color: #000000; /* Opcional: color de fondo para rellenar espacios vacíos */
+}
+
+
+
+
+/* ============================= */
+/* Media Queries               */
+/* ============================= */
+@media (max-width: 600px) {
+  header nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  header nav a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  header nav a {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  header nav a {
+    font-size: 1rem;
+  }
+}
